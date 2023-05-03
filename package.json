@@ -14,7 +14,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "rm -rf build && npm run build && mv build docs",
+    "predeploy": "rimraf build && npm run build && mv build docs",
     "deploy": "gh-pages -d docs"
   },
   "homepage": "https://drgerber.github.io/create-react-app",
@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "rimraf": "^5.0.0"
   }
 }
